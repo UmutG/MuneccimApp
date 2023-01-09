@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#75A7E1">
+
+    <TextView
+        android:id="@+id/cityLocation"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cityLocation"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:shadowColor="#515151"
+        android:shadowDy="4.1"
+        android:shadowRadius="3"
+        android:fontFamily="@font/bookos"/>
+
+    <TextView
+        android:id="@+id/presentDate"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dateNow"
+        android:textSize="20dp"
+        android:shadowColor="#515151"
+        android:shadowDy="4.1"
+        android:shadowRadius="3"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bookos"/>
+    <TextView
+        android:id="@+id/presentTime"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bookos"
+        android:shadowColor="#515151"
+        android:shadowDy="4.1"
+        android:shadowRadius="3"
+        android:text="@string/timeNow"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/presentWeather"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cloudy"
+        />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="54dp"
+        android:text="@string/currentTemp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bookos"
+        android:shadowColor="#515151"
+        android:shadowDy="4.1"
+        android:shadowRadius="3"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/highTemp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="@string/highestTemp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bookos"
+            android:shadowColor="#515151"
+            android:shadowDy="4.1"
+            android:shadowRadius="3"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/line"/>
+
+            <TextView
+                android:id="@+id/lowTemp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:text="@string/lowestTemp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bookos"
+                android:shadowColor="#515151"
+                android:shadowDy="4.1"
+                android:shadowRadius="3"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center">
+
+        <HorizontalScrollView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/weatherGroup"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/recommend"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="@string/recommendation"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bookos"
+        android:shadowColor="#515151"
+        android:shadowDy="3.6"
+        android:shadowRadius="5"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Müneccim</string>
+    <string name="cityLocation">Besiktas / Istanbul</string>
+    <string name="dateNow">Jan 04, 2023</string>
+    <string name="timeNow">11:43 pm</string>
+    <string name="hourlyTemp">10°</string>
+    <string name="currentTemp">10°</string>
+    <string name="highestTemp">11°</string>
+    <string name="lowestTemp">7°</string>
+    <string name="recommendation">Do not forget to take umbrella with you.</string>
+
+</resources>
